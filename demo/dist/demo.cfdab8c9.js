@@ -15702,7 +15702,7 @@ webpackJsonp(
       t.exports = o
     },
     K4d7: function (t, e, n) {
-      t.exports = n.p + 'logo.ee7cd8ed.svg'
+      t.exports = n.p + 'logo.5d5d9eef.svg'
     },
     K6QM: function (t, e, n) {
       'use strict'
@@ -28397,4 +28397,4 @@ webpackJsonp(
   },
   [0]
 )
-// # sourceMappingURL=demo.82739797.js.map
+// # sourceMappingURL=demo.cfdab8c9.js.map
