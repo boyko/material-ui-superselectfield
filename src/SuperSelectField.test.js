@@ -13,6 +13,7 @@ import Adapter from 'enzyme-adapter-react-16'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import SuperSelectField from './SuperSelectField'
+import DropDownArrow from 'material-ui-icons/ArrowDropDown'
 
 
 Enzyme.configure({ adapter: new Adapter() });
@@ -185,7 +186,8 @@ describe('Selections presenter', () => {
   it('should display the default [DropDownIcon]', () => {
     const wrapper = shallowWithContext(<SuperSelectField showAutocompleteThreshold="always">{testChildren}</SuperSelectField>)
     const selectionsPresenter = wrapper.find('SelectionsPresenter')
-    expect(selectionsPresenter.dive().find('NavigationArrowDropDown').length).toEqual(1)
+    // expect(selectionsPresenter.dive().find('NavigationArrowDropDown').length).toEqual(1)
+    expect(selectionsPresenter.dive().find(DropDownArrow).length).toEqual(1)
   })
   it('should display the custom [DropDownIcon]', () => {
     const wrapper = shallowWithContext(<SuperSelectField showAutocompleteThreshold="always" dropDownIcon={<span id="customDropDown">></span>}>{testChildren}</SuperSelectField>)

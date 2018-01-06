@@ -1,6 +1,7 @@
 import React, { cloneElement } from 'react'
 import FloatingLabel from './FloatingLabel'
-import DropDownArrow from 'material-ui/svg-icons/navigation/arrow-drop-down'
+// import DropDownArrow from 'material-ui/svg-icons/navigation/arrow-drop-down'
+import DropDownArrow from 'material-ui-icons/ArrowDropDown'
 import { selectionsPresenterTypes } from './types'
 import { selectionsPresenterDefaultProps } from './defaultProps'
 
